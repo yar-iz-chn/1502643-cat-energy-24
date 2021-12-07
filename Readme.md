@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Yarosvet Rytikov](https://up.htmlacademy.ru/adaptive/24/user/1502643).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Оксанич](https://htmlacademy.ru/profile/oksanych).
 
 ---
 
