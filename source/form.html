@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru" data-cbscriptallow="true" wtx-context="02AE7768-BB05-401A-9D18-685652EEF061">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>HTML Academy: Кэт энерджи</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <header class="page-header">
+            <a class="page-header__logo" href="index.html">
+                <img class="page-header__logo-image" src="img/logo-desktop.svg" width="192" height="66" alt="Кэт энерджи">
+            </a>
+            <nav class="page-header__nav main-nav main-nav--closed">
+                <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+                <ul class="main-nav__list main-menu">
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="index.html">Главная</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="catalog.html">Каталог продукции</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link main-menu__link--active">Подбор программы</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <main class="page-main">
+        <h1 class="page-main__header page-main__header--form container">Подбор программы</h1>
+        <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="POST" wtx-context="F0B0B838-A6B7-4DCA-AEDD-0CACD5CA3AFC">
+            <p class="form__text container">Заполните анкету и мы подберем<br> программу питания для вашего кота</p>
+            <div class="form__list-wrapper">
+                <ul class="form__list container">
+                    <li class="form__item">
+                        <label class="form__label" for="form-name">имя:*</label>
+                        <input class="form__input-text" type="text" placeholder="барсик" id="form-name" name="name" required="" wtx-context="EB1C3380-D7A3-47F3-8668-0F6525621153">
+                    </li>
+                    <li class="form__item">
+                        <label class="form__label" for="form-weight">вес (кг):*</label>
+                        <input class="form__input-text" type="text" placeholder="7" id="form-weight" name="weight" required="" wtx-context="B0C87B20-531E-4537-8152-318CB82AEC01">
+                    </li>
+                    <li class="form__item">
+                        <label class="form__label" for="form-age">возраст (лет):</label>
+                        <input class="form__input-text" type="text" placeholder="7" id="form-age" name="age" wtx-context="8F2869CB-9D9F-4EB2-B88E-6C44C6779D1F">
+                    </li>
+                </ul>
+                <div class="form__list-border-wrapper">
+                    <ul class="form__list form__list--mass container">
+                        <li class="form__item">
+                            <input class="form__input-radio visually-hidden" type="radio" id="form-thin" name="mass" value="down-mass" checked="" wtx-context="CFECCDCA-3CC6-40DE-9F06-6442AEC6128A">
+                            <label class="form__label form__label--radio" for="form-thin">похудение</label>
+                        </li>
+                        <li class="form__item">
+                            <input class="form__input-radio visually-hidden" type="radio" id="form-thick" name="mass" value="up-mass" wtx-context="4EDA9D18-C001-4BB1-90FB-8EF9397DAC0A">
+                            <label class="form__label form__label--radio" for="form-thick">набор массы</label>
+                        </li>
+                        <li class="form__item">
+                            <input class="form__input-radio visually-hidden" type="radio" id="form-advice" name="mass" value="advice-mass" wtx-context="F4B4FAA3-4EE3-4EFF-8102-33C45571BAD2">
+                            <label class="form__label form__label--radio" for="form-advice">не знаю (нужен ваш совет)</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <fieldset class="form__fieldset form__fieldset--owner">
+                <div class="container">
+                    <h2 class="form__legend form__legend--owner">Контактные данные (владельца кота)</h2>
+                    <ul class="form__list form__list--contacts">
+                        <li class="form__item">
+                            <label class="form__label form__label--email" for="form-email">e-mail:*</label>
+                            <input class="form__input-text form__input-text--email" type="email" placeholder="kuklachev@gmail.com" id="form-email" name="email" required="" wtx-context="8CE5CA65-203C-4BE7-8606-7FD48DFE7981">
+                        </li>
+                        <li class="form__item">
+                            <label class="form__label form__label--phone" for="form-phone">телефон:*</label>
+                            <input class="form__input-text form__input-text--phone" type="tel" placeholder="8 (960) 900-60-90" id="form-phone" name="phone" required="" wtx-context="54300533-0926-4C3C-9F91-6C1A519BBCEB">
+                        </li>
+                    </ul>
+                </div>
+            </fieldset>
+            <fieldset class="form__fieldset form__fieldset--comments">
+                <div class="container">
+                    <h2 class="form__legend form__legend--comments">Комментарий</h2>
+                    <div class="form__comments-wrapper">
+                        <textarea class="form__textarea" placeholder="Расскажите обо всех повадках кота" name="comments"></textarea>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="form__fieldset">
+                <div class="container">
+                    <h2 class="form__legend form__legend--additional">Дополнительно</h2>
+                    <ul class="form__list form__list--additional">
+                        <li class="form__item">
+                            <input class="form__input-checkbox visually-hidden" type="checkbox" id="form-sweetener" name="sweetener" checked="" wtx-context="1D063D64-4008-44B2-9BCA-BFD30791135E">
+                            <label class="form__label form__label--checkbox" for="form-sweetener">Сахарозаменитель</label>
+                        </li>
+                        <li class="form__item">
+                            <input class="form__input-checkbox visually-hidden" type="checkbox" id="form-drinkwater" name="drinkwater" wtx-context="32D8A006-5408-4F82-A2CB-95920E2156F7">
+                            <label class="form__label form__label--checkbox" for="form-drinkwater">Питьевая вода</label>
+                        </li>
+                        <li class="form__item">
+                            <input class="form__input-checkbox visually-hidden" type="checkbox" id="form-milk" name="milk" wtx-context="C7D66066-7195-4201-B405-5951C0280B8E">
+                            <label class="form__label form__label--checkbox" for="form-milk">Молоко</label>
+                        </li>
+                        <li class="form__item">
+                            <input class="form__input-checkbox visually-hidden" type="checkbox" id="form-vitamins" name="vitamins" wtx-context="AA976355-FD7D-4724-A3DC-38B0341B1D58">
+                            <label class="form__label form__label--checkbox" for="form-vitamins">Витамины</label>
+                        </li>
+                    </ul>
+                </div>
+            </fieldset>
+            <div class="form__fieldset-button-wrapper container">
+                <button class="form__button" type="submit">Отправить заявку</button>
+                <p class="form__required-notify">* — Обязательные поля</p>
+            </div>
+        </form>
+
+    </main>
+    <section class="contacts">
+        <div class="contacts__header container">
+            <p class="contacts__welcome">приглашаем<br> к сотрудничеству дилеров!</p>
+            <p class="contacts__address">ул. Большая Конюшенная, д. 19/8<br><br> Санкт-Петербург</p>
+        </div>
+        <div class="contacts__map">
+        </div>
+    </section>
+    <footer class="page-footer">
+        <div class="page-footer__wrapper container">
+            <a class="page-footer__logo page-footer__logo--link">
+                <img class="page-footer__logo-image" src="img/logo-tablet-2.svg" width="130" height="25" alt="footer logo">
+            </a>
+            <div class="page-footer__social social">
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a class="social__link social__link--vk" href="#" aria-label="Переход на сайт vk">
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--ig" href="#" aria-label="Переход на сайт instagram">
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--fb" href="#" aria-label="Переход на сайт facebook">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="page-footer__copyright copyright">
+                <a class="copyright__link" href="http://htmlacademy.ru">HTML Academy</a>
+                <a class="copyright__link-logo" href="http://htmlacademy.ru" aria-label="Переход на сайт в HTML Academy">
+                    <svg class="copyright__logo" width="60" height="80">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
