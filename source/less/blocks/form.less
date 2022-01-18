@@ -1,0 +1,262 @@
+.form {
+
+    &__text {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: left;
+        text-transform: uppercase;
+        margin: 37px 20px;
+    }
+
+    // &__list {}
+
+    &__item {
+        height: 45px;
+        width: 280px;
+        margin-bottom: 14px;
+        position: relative;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    &__label {
+        display: inline-block;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #444;
+        text-transform: uppercase;
+        margin-top: 13px;
+        margin-bottom: auto;
+    }
+
+    &__input-text {
+        display: inline-block;
+        height: 45px;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 1px solid #e7e7e7;
+        position: absolute;
+        right: 0;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: left;
+        text-transform: uppercase;
+        padding-left: 16px;
+        font-family: "Oswald Regular",
+            sans-serif;
+
+        &[name="name"] {
+            width: 214px;
+        }
+
+        &[name="weight"] {
+            width: 188px;
+        }
+
+        &[name="age"] {
+            width: 156px;
+        }
+
+        &[name="email"] {
+            width: 220px - 16px;
+        }
+
+        &[name="phone"] {
+            width: 205px - 16px;
+        }
+
+    }
+
+    .form__list--mass label {
+        margin-left: 45px;
+        color: #222;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .form__list--mass label:before {
+        content: "";
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 0;
+        bottom: 8px;
+        background: radial-gradient(#fff 0px, #fff 13.75px, #cdcdcd 13px, #cdcdcd 5px) 0 0 no-repeat;
+        border-radius: 50%;
+    }
+
+    .form__list--mass input[type=radio]:checked+label:before {
+        background: radial-gradient(#68B738 0px, #68B738 7px, #fff 7px, #fff 14px, #cdcdcd 14px, #cdcdcd 15px) 0 0 no-repeat;
+    }
+
+    .form__list--mass label:hover:before {
+        background: radial-gradient(#fff 0px, #fff 13.75px, #bababa 13px, #bababa 5px) 0 0 no-repeat;
+        cursor: pointer;
+    }
+
+    .form__list--mass[type=radio]:checked label:hover:before {
+        background: radial-gradient(#68B738 0px, #68B738 7px, #fff 7px, #fff 14px, #bababa 14px, #bababa 15px) 0 0 no-repeat;
+        cursor: pointer;
+    }
+
+    .form__list--mass input[type=radio]:disabled+label:before,
+    .form__list--mass input[type=radio]:disabled+label {
+        opacity: 0.3;
+    }
+
+    &__list {
+        padding-bottom: 24px;
+        border-bottom: 1px solid #d9d9d9;
+
+        &--additional {
+            border: 0;
+        }
+    }
+
+    &__list-border-wrapper {
+        padding-top: 15px;
+    }
+
+    &__fieldset {
+        border: 0;
+
+    }
+
+    &__legend {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 99px;
+            border: 1px solid #68b738;
+            right: -20px;
+            top: 54%;
+
+
+
+        }
+
+        &--comments::after {
+            width: 158px;
+        }
+
+        &--additional::after {
+            width: 136px;
+        }
+    }
+
+    &__textarea {
+        width: 280px;
+        height: 150px;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 1px solid #e7e7e7;
+        font-family: "Oswald Regular", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: left;
+        text-transform: uppercase;
+        padding-left: 16px;
+        padding-top: 10px;
+    }
+
+    &__button {
+        font-family: "Oswald Regular",
+            sans-serif;
+        display: block;
+        grid-area: button;
+        height: 40px;
+        width: 280px;
+        left: 20px;
+        top: 136px;
+        border-radius: 0px;
+        background-color: #68B738;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 10px 0;
+        border: 0;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+
+    &__label--checkbox {
+        margin-left: 45px;
+        color: #000;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .form__list--additional label:before {
+        content: "";
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 0;
+        bottom: 8px;
+        background: #fff;
+        outline: 1px solid #cdcdcd;
+    }
+
+    .form__list--additional input[type=checkbox]:checked+label:before {
+        background: url("/source/img/tick.png") 50% 50% no-repeat;
+        background-color: #fff;
+    }
+
+    .form__list--additional label:hover:before {
+        outline-color: #bababa;
+        cursor: pointer;
+    }
+
+    .form__list--additional input[type=checkbox]:disabled+label:before,
+    .form__list--additional input[type=checkbox]:disabled+label {
+        opacity: 0.3;
+    }
+
+    &__required-notify {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+}
+
+header {
+    border-bottom: 1px solid #d9d9d9;
+}

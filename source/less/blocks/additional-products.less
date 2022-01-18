@@ -1,0 +1,153 @@
+.additional-products {
+
+
+    &__header-container {
+        height: 85px;
+        position: relative;
+        top: 10px;
+    }
+
+    &__header {
+        display: block;
+        height: 24px;
+        padding-top: 25px;
+        padding-bottom: 36px;
+        margin: 0;
+        position: relative;
+
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            height: 0;
+            width: 53px;
+            border: 1px solid #68B738;
+            right: -20px;
+            top: 47.5px;
+        }
+    }
+
+    &__item {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 29px 14px 53px;
+        gap: 13px 0px;
+        grid-auto-flow: row;
+        justify-content: space-between;
+        justify-items: stretch;
+        align-items: end;
+        grid-template-areas: "title title"
+            "count price"
+            "order order";
+        width: 280px;
+        height: 130px;
+        position: relative;
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            height: 0;
+            width: 280px;
+            border: 1px solid #CDCDCD;
+            right: -0px;
+            top: 130px;
+        }
+    }
+
+    &__title {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+        text-transform: uppercase;
+        align-self: end;
+        grid-area: title;
+        margin: 0;
+    }
+
+    &__count {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0em;
+        text-align: left;
+        grid-area: count;
+        margin: 0;
+    }
+
+    &__price {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0em;
+        text-align: right;
+        grid-area: price;
+        margin: 0;
+    }
+
+    &__order {
+        display: block;
+        grid-area: button;
+        height: 20px;
+        width: 280px;
+        left: 20px;
+        top: 136px;
+        border-radius: 0px;
+        background-color: #68B738;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 10px 0;
+        align-self: start;
+        grid-area: order;
+        margin: 0;
+    }
+
+    .order-all {
+        margin: 40px 0;
+        position: relative;
+        height: 290px;
+        width: 280px;
+        background: url("/source/img/green_block.png"), url("/source/img/cat_bag.png");
+        background-repeat: no-repeat;
+        position: relative;
+
+        &__image {
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            top: 60px;
+            left: 101px;
+            height: 80px;
+            width: 78px;
+        }
+
+        &__text {
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            bottom: 43px;
+            left: 60px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: white;
+            height: 60px;
+            width: 161px;
+            margin: 0;
+        }
+    }
+}

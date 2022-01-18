@@ -1,88 +1,11 @@
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
-}
-
-@basic-green: #68b738;
-@basic-grey: #f2f2f2;
-@basic-grey-dark: #eaeaea;
-@base-color: #ff4136;
-@img: source/img;
-@font-face {
-  font-family: "Oswald Regular";
-  src: url("/source/fonts/oswaldregular.woff2") format("woff2"),
-    url("/source/fonts/oswaldregular.woff") format("woff");
-}
-.bg-img-position {
-  background-position: 50% 50%;
-}
-
-body {
-  background-color: white;
-  color: black;
-  width: 320px;
-  margin: 0;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: "Oswald Regular", sans-serif;
-  overflow: hidden;
-}
-
-.size(@h: auto; @w: auto) {
-  height: @h;
-  width: @w;
-}
-
-section {
-  margin-bottom: 20px;
-}
-
-.page-header {
-  background-color: white;
-  height: 65px;
-  display: grid;
-  grid-template-columns: 73px 1fr;
-  grid-template-rows: 65px;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: "logo menu";
-
-  &__logo {
-    grid-area: logo;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
-    .size(32px, 37px);
-  }
-  &__logo img {
-    .size(32px, 37px);
-  }
-  &__nav {
-    grid-area: menu;
-    &--closed {
-      display: none;
-    }
-    .main-nav__toggle {
-      font-size: 0;
-      background-color: transparent;
-      height: 24px;
-      width: 24px;
-      border: 0;
-      background-image: url("img/menu-mobile.svg");
-    }
-  }
-}
-// .generate-stairs(@n) when (@n > 0) {
-
-//   .stair-@{n} {
-//   }
-//   .generate-stairs(@n - 1);
-// }
-// .generate-stairs(100);
+@import "blocks/modal.less";
+@import "blocks/header.less";
+@import "blocks/program.less";
+@import "blocks/categories.less";
+@import "blocks/advantages.less";
+@import "blocks/before-after.less";
+@import "blocks/contacts.less";
+@import "blocks/footer.less";
+@import "blocks/catalog.less";
+@import "blocks/additional-products.less";
+@import "blocks/form.less";
