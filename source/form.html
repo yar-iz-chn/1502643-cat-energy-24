@@ -28,7 +28,7 @@
     <div class="container">
         <header class="page-header">
             <a class="page-header__logo" href="index.html">
-                <img class="page-header__logo-image" src="img/logo-desktop.svg" width="192" height="66" alt="Кэт энерджи">
+                <img class="page-header__logo-image" src="img/logo-mobile.svg" width="192" height="66" alt="Кэт энерджи">
             </a>
             <nav class="page-header__nav main-nav main-nav--closed">
                 <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -47,7 +47,7 @@
         </header>
     </div>
     <main class="page-main">
-        <h1 class="page-main__header page-main__header--form container">Подбор программы</h1>
+        <h1 class="page-form__header page-main__header--form container">Подбор программы</h1>
         <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="POST">
             <p class="form__text container">Заполните анкету и мы подберем<br> программу питания для вашего кота</p>
             <div class="form__list-wrapper">
@@ -135,13 +135,19 @@
         </form>
 
     </main>
-    <section class="contacts">
+    <section class="contacts contacts--index">
         <h2 class="visually-hidden">Приглашаем к сотрудничеству дилеров!</h2>
         <div class="contacts__header container">
             <p class="contacts__welcome">Приглашаем<br> к сотрудничеству дилеров!</p>
-            <p class="contacts__address">ул. Большая Конюшенная, д. 19/8<br><br> Санкт-Петербург</p>
+            <p class="contacts__address">ул. Большая Конюшенная, д. 19/8<br> Санкт-Петербург</p>
+        </div>
+        <div class="map">
+            <iframe src=" https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.32085871609698!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1640034086278!5m2!1sru!2sru
+                " width="320" height="362 " style="border:0; " allowfullscreen=" " loading="lazy "></iframe>
         </div>
     </section>
+
+
     <footer class="page-footer">
         <div class="page-footer__wrapper container">
             <a class="page-footer__logo page-footer__logo--link">
