@@ -3,10 +3,10 @@
   background-repeat: no-repeat;
 }
 
-.page-footer {
+footer {
   height: 236px;
   width: 320px;
-  background-color: #E5E5E5;
+  background-color: @special-grey-7;
 
   .container {
     display: grid;
@@ -34,7 +34,7 @@
     width: 130px;
     height: 22px;
 
-    .social__list {
+    &__list {
       display: flex;
       justify-content: space-between;
       width: 130px;
@@ -46,7 +46,7 @@
       align-self: center;
 
       .social__link {
-        .social__link--fb {
+        &--fb {
           background-image: url("/source/img/icon_facebook.svg");
           .bg-img-position();
           display: block;
@@ -56,11 +56,10 @@
           display: block;
         }
 
-
       }
 
       .social__link {
-        .social__link--vk {
+        &--vk {
           background-image: url("/source/img/icon_vkontakte.svg");
           .bg-img-position();
           display: block;
@@ -72,7 +71,7 @@
       }
 
       .social__link {
-        .social__link--ig {
+        &--ig {
           background-image: url("/source/img/icon_instagram.svg");
           .bg-img-position();
           display: block;
@@ -80,6 +79,7 @@
           width: 16px;
           background-size: 16px 16px;
         }
+
 
       }
 
@@ -94,7 +94,7 @@
     display: flex;
     justify-content: space-between;
 
-    .copyright__link {
+    &__link {
       height: 18px;
       width: 114px;
       font-family: Arial, sans-serif;
@@ -111,7 +111,7 @@
 
     }
 
-    .copyright__link-logo {
+    &__link-logo {
       background-image: url("/source/img/htmlacademy.svg");
       height: 34px;
       width: 27px;
