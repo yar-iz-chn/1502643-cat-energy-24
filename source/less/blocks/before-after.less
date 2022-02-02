@@ -2,104 +2,7 @@
   background-color: #eaeaea;
   position: relative;
   height: 700px;
-
-  .before-after__title {
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 40px;
-    letter-spacing: 0em;
-    text-align: center;
-    position: relative;
-    top: 25px;
-  }
-
-  .before-after__text {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0em;
-    text-align: left;
-    position: relative;
-    top: 40px;
-  }
-
-  .before-after__price-wrapper {
-    position: relative;
-    top: 25px;
-  }
-
-  .before-after__list {
-    height: 70px;
-    width: 280px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .before-after__item {
-    width: 124px;
-    background-image: url(/source/img/befor-after-bg.png);
-    .bg-img-position;
-    list-style: none;
-    height: 70px;
-    position: relative;
-    top: 20px;
-  }
-
-  .before-after-item__value {
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: center;
-  }
-
-  .before-after-item__title {
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 12px;
-    letter-spacing: 0em;
-    text-align: center;
-    height: 24px;
-    width: 77px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    top: -20px;
-  }
-
-  .before-after__price {
-    font-family: "Oswald Medium", sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: center;
-    text-transform: uppercase;
-    position: relative;
-    top: 30px;
-  }
-
-  .before-after__image-wrapper {
-    position: relative;
-    top: 75px;
-  }
-
-  .before-after__image {
-    height: 232px;
-    width: 280px;
-    display: none;
-  }
-
-  .before-after__image--show {
-    display: block;
-  }
+  margin: 0;
 
   .buttons-list__button {
     font-family: "Oswald Medium", sans-serif;
@@ -129,8 +32,8 @@
     height: 14px;
     width: 85px;
     border-radius: 6px;
-    background-color: @white;
-    border: 1px solid @special-grey-3;
+    background-color: #fff;
+    border: 1px solid #cdcdcd;
     position: relative;
     top: 4px;
   }
@@ -139,12 +42,528 @@
     display: block;
     height: 6px;
     width: 35px;
-    background-color: @basic-green;
+    background-color: #68b738;
     border-radius: 3px;
     position: relative;
     top: 4px;
     left: 4px;
   }
+}
 
-  margin: 0;
+.before-after__title {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+  position: relative;
+  top: 25px;
+}
+
+.before-after__text {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: relative;
+  top: 40px;
+}
+
+.before-after__price-wrapper {
+  position: relative;
+  top: 25px;
+}
+
+.before-after__list {
+  height: 70px;
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.before-after__item {
+  width: 124px;
+  background-image: url(../img/befor-after-bg.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  list-style: none;
+  height: 70px;
+  position: relative;
+  top: 20px;
+}
+
+.before-after-item__value {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.before-after-item__title {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: center;
+  height: 24px;
+  width: 77px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: -20px;
+}
+
+.before-after__price {
+  font-family: "Oswald Medium", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  top: 30px;
+}
+
+.before-after__image-wrapper {
+  position: relative;
+  top: 75px;
+}
+
+.before-after__image {
+  height: 232px;
+  width: 280px;
+  display: none;
+}
+
+.before-after__image--show {
+  display: block;
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+  .before-after {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, transparent 0px, transparent 619px, #eaeaea 619px, #eaeaea 1080px);
+    position: relative;
+    height: 1080px;
+    margin: 0;
+
+    .buttons-list__button {
+      font-family: "Oswald Medium", sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: center;
+      text-transform: uppercase;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px dotted #b2b2b2;
+      width: auto;
+      padding: 0;
+      margin: 0;
+    }
+
+    .before-after__buttons {
+      height: 40px;
+      width: 210px;
+      display: flex;
+      position: relative;
+      top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: space-between;
+      width: 592px;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+
+    .buttons-list__scale {
+      height: 6px;
+      width: 426px;
+      border-radius: 6px;
+      background-color: #CDCDCD;
+      border: 1px solid #cdcdcd;
+      position: relative;
+      top: 14px;
+    }
+
+    .buttons-list__bar {
+      display: block;
+      height: 12px;
+      width: 12px;
+      background-color: #68b738;
+      border-radius: 3px;
+      position: relative;
+      top: -14px;
+      left: 196px;
+      border: 11px solid #ffffff;
+      outline: 1px solid #cdcdcd;
+      border-radius: 50%;
+    }
+  }
+
+  .before-after__title {
+    width: 375px;
+    height: 60px;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .before-after__text {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    position: relative;
+    top: 38px;
+  }
+
+  .before-after__price-wrapper {
+    position: relative;
+    top: 79px;
+  }
+
+  .before-after__list {
+    height: 77px;
+    width: 366px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .before-after__item {
+    width: 162px;
+    background-image: url(../img/befor-after-bg.png);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    list-style: none;
+    height: 77px;
+    position: relative;
+    top: 0;
+  }
+
+  .before-after-item__value {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .before-after-item__title {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: center;
+    height: 24px;
+    width: 77px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -20px;
+  }
+
+  .before-after__price {
+    text-align: right;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+  }
+
+  .before-after__desktop-column-wrapper-images {
+    position: relative;
+    top: 174px;
+  }
+
+  .before-after__price-value {
+    width: 175px;
+    position: relative;
+    top: 0px;
+  }
+
+  .before-after__image-wrapper {
+    top: 0px;
+    position: relative;
+  }
+
+  .before-after__image {
+    height: 511px;
+    width: 296px;
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 296px;
+    background: url(../img/cat-skinny-tablet.png) no-repeat;
+    left: 353px;
+    position: absolute;
+    top: 0;
+  }
+
+  .before-after__image--show {
+    display: block;
+    background: url(../img/cat-fat-tablet.png) no-repeat;
+    position: relative;
+    left: 57px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .before-after {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, transparent 0px, transparent 179px, #eaeaea 179px, #eaeaea 1080px);
+    position: relative;
+    height: 641px;
+    margin: 0;
+
+    .buttons-list__button {
+      font-family: "Oswald Medium", sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: center;
+      text-transform: uppercase;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px dotted #b2b2b2;
+      width: auto;
+      padding: 0;
+      margin: 0;
+    }
+
+    .before-after__buttons {
+      height: 40px;
+      width: 210px;
+      display: flex;
+      position: relative;
+      top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: space-between;
+      width: 592px;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+
+    .buttons-list__scale {
+      height: 6px;
+      width: 426px;
+      border-radius: 6px;
+      background-color: #CDCDCD;
+      border: 1px solid #cdcdcd;
+      position: relative;
+      top: 14px;
+    }
+
+    .buttons-list__bar {
+      display: block;
+      height: 12px;
+      width: 12px;
+      background-color: #68b738;
+      border-radius: 3px;
+      position: relative;
+      top: -14px;
+      left: 196px;
+      border: 11px solid #ffffff;
+      outline: 1px solid #cdcdcd;
+      border-radius: 50%;
+    }
+  }
+
+  .before-after__wrapper {
+    display: flex;
+    height: 641px;
+    position: relative;
+    justify-content: space-between;
+  }
+
+  .before-after__title {
+    width: 375px;
+    height: 60px;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: left;
+    top: 0;
+  }
+
+  .before-after__text {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    position: relative;
+    margin: 0;
+    top: 90px;
+  }
+
+  .before-after__price-wrapper {
+    position: relative;
+    top: 79px;
+  }
+
+  .before-after__list {
+    height: 77px;
+    width: 366px;
+    display: flex;
+    justify-content: space-between;
+    top: 69px;
+    position: relative;
+  }
+
+  .before-after__item {
+    width: 162px;
+    background-image: url(../img/befor-after-bg.png);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    list-style: none;
+    height: 77px;
+    position: relative;
+    top: 0;
+  }
+
+  .before-after-item__value {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .before-after-item__title {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: center;
+    height: 24px;
+    width: 77px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 0;
+  }
+
+  .before-after__price {
+    font-family: "Oswald Regular", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    position: relative;
+    top: 110px;
+    right: 0;
+    width: 200px;
+    width: 436px;
+    text-align: left;
+
+    span {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0em;
+      display: inline-block;
+      margin-left: auto;
+      width: 100px;
+      margin-left: 63px;
+    }
+  }
+
+  .before-after__desktop-column-wrapper {
+    margin: 0;
+    width: 438px;
+    height: 317px;
+    left: 110px;
+  }
+
+  .before-after__desktop-column-wrapper-images {
+    position: relative;
+    top: 0px;
+    width: 591px;
+    height: 576px;
+    padding-right: 110px;
+  }
+
+  .before-after__price-value {
+    width: 175px;
+    position: relative;
+    top: 0px;
+  }
+
+  .before-after__image-wrapper {
+    top: 0px;
+    position: relative;
+    left: 0;
+  }
+
+  .before-after__image {
+    height: 511px;
+    width: 296px;
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 296px;
+    background: url(../img/cat-skinny-tablet.png) no-repeat;
+    left: 293px;
+    position: absolute;
+    top: 0;
+  }
+
+  .before-after__image--show {
+    display: block;
+    background: url(../img/cat-fat-tablet.png) no-repeat;
+    position: relative;
+    left: -3px;
+  }
 }
