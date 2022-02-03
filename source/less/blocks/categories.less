@@ -1,0 +1,96 @@
+.categories {
+  margin-top: 50px;
+
+  .categories__item {
+    height: 226px;
+    width: 240px;
+    background-color: @basic-grey;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    padding: 20px;
+    margin-bottom: 20px;
+
+    .categories-item__title {
+      display: block;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 37px;
+      letter-spacing: 0em;
+      text-align: left;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      width: 180px;
+      margin-left: 71px;
+    }
+
+    .categories-item__title::before {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 53px;
+      width: 50px;
+      background-image: url(/source/img/cat_back_slim.png);
+      top: -10px;
+      background-size: contain;
+      z-index: 99999999999;
+      left: -71px;
+    }
+
+    .categories-item__title--thick::before {
+      background-image: url(/source/img/cat_back_strong.png);
+      width: 67px;
+      height: 50px;
+      left: -81px;
+    }
+
+    .categories-item__text {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0em;
+      text-align: left;
+
+      &::after {
+        content: "";
+        height: 0px;
+        width: 240px;
+        border: 1px solid #d9d9d9;
+        display: block;
+        margin-top: 29px;
+        margin-bottom: 19px;
+      }
+    }
+
+    .categories-item__link {
+      font-family: "Oswald Medium", sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0em;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #000;
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 25px;
+        height: 10px;
+        background-image: url(/source/img/icon-arrow.png);
+        .bg-img-position;
+        position: absolute;
+        left: 101px;
+        top: 7px;
+      }
+    }
+  }
+}

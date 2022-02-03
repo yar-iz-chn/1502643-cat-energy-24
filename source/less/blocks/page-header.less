@@ -1,0 +1,106 @@
+.page-header {
+  background-color: white;
+  height: 65px;
+  display: grid;
+  grid-template-columns: 73px 1fr;
+  grid-template-rows: 65px;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "logo menu";
+  position: relative;
+
+
+  .title {
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    width: 101px;
+    padding-right: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    position: absolute;
+    top: 0px;
+    left: 100px;
+  }
+
+  .header__logo {
+    grid-area: logo;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    .size(34px, 38px);
+  }
+
+  .header__logo img {
+    .size(34px, 38px);
+  }
+
+  .main-nav {
+    grid-area: menu;
+
+    .main-nav--closed {
+      .main-menu {
+        display: none;
+      }
+    }
+
+    .main-nav--open {
+      display: block;
+      position: absolute;
+      z-index: 999;
+      top: 64px;
+      width: 320px;
+      height: 200px;
+      background-color: #fff;
+      background-clip: border-box;
+
+      li {
+        font-family: "Oswald Medium", sans-serif;
+        list-style: none;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-transform: uppercase;
+        width: 320px;
+        padding-top: 21px;
+        padding-bottom: 23px;
+        background-color: white;
+        border-top: 1px solid #e6e6e6;
+        border-bottom: 1px solid #e6e6e6;
+        text-align: center;
+
+        &:nth-of-type(1) {
+          border-top: 2px solid #e6e6e6;
+        }
+
+        &:nth-of-type(3) {
+          border-bottom: 2px solid #e6e6e6;
+        }
+
+        a,
+        a:visited {
+          color: black;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .main-nav__toggle {
+      font-size: 0;
+      background-color: transparent;
+      height: 24px;
+      width: 24px;
+      border: 0;
+      background-image: url("/source/img/menu-mobile.svg");
+      .bg-img-position();
+      position: absolute;
+      right: 20px;
+      top: 18px;
+    }
+  }
+
+  border-bottom: 1px solid #d9d9d9;
+}
