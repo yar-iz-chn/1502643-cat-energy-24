@@ -1,78 +1,91 @@
+@font-face {
+	font-family: "Oswald Regular";
+	src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Oswald Medium";
+	src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
+}
+
+/*# sourceMappingURL=style.css.map */
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    border: 0;
-    clip: rect(0 0 0 0);
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	border: 0;
+	clip: rect(0 0 0 0);
 }
 
 .container {
-    width: 280px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@basic-green: #68b738;
-@basic-grey: #f2f2f2;
-@basic-grey-dark: #eaeaea;
-@base-color: #ff4136;
-
-@font-face {
-    font-family: "Oswald Regular";
-    src: url("/source/fonts/oswaldregular.woff2") format("woff2"),
-        url("/source/fonts/oswaldregular.woff") format("woff");
-}
-
-@font-face {
-    font-family: "Oswald Medium";
-    src: url("/source/fonts/oswaldmedium.woff2") format("woff2"),
-        url("/source/fonts/oswaldmedium.woff") format("woff");
-}
-
-.bg-img-position {
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-}
-
-.size(@h: auto; @w: auto) {
-    height: @h;
-    width: @w;
+	width: 280px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 section {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 ul {
-    padding: 0;
-    margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
 main {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 li {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 
 body {
-    background-color: white;
-    color: black;
-    width: 320px;
-    margin: 0;
-    padding: 0;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: "Oswald Regular", sans-serif;
+	background-color: white;
+	color: black;
+	width: 320px;
+	margin: 0;
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Oswald Regular", sans-serif;
 }
 
 button {
-    cursor: pointer;
+	cursor: pointer;
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+	body {
+		width: 768px;
+	}
+
+	.container {
+		width: 709px;
+	}
+
+	section {
+		margin-bottom: 60px;
+	}
+}
+
+@media (min-width: 1440px) {
+	body {
+		width: 1440px;
+		padding: 0;
+	}
+
+	section {
+		margin-bottom: 82px;
+	}
+
+	.container {
+		width: 1220px;
+	}
 }

@@ -1,10 +1,158 @@
+.additional-products__header-container {
+    height: 85px;
+    position: relative;
+    top: 10px;
+}
+
+.additional-products__header {
+    display: block;
+    height: 24px;
+    padding-top: 25px;
+    padding-bottom: 36px;
+    margin: 0;
+    position: relative;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 0;
+        width: 53px;
+        border: 1px solid #68B738;
+        right: -20px;
+        top: 47.5px;
+    }
+}
+
+.additional-products__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 29px 14px 53px;
+    gap: 13px 0px;
+    grid-auto-flow: row;
+    justify-content: space-between;
+    justify-items: stretch;
+    align-items: end;
+    grid-template-areas: "title title""count price""order order";
+    width: 280px;
+    height: 130px;
+    position: relative;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 0;
+        width: 280px;
+        border: 1px solid #CDCDCD;
+        right: 0px;
+        top: 130px;
+    }
+}
+
+.additional-products__title {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+    align-self: end;
+    grid-area: title;
+    margin: 0;
+}
+
+.additional-products__count {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    grid-area: count;
+    margin: 0;
+}
+
+.additional-products__price {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: right;
+    grid-area: price;
+    margin: 0;
+}
+
+.additional-products__order {
+    display: block;
+    grid-area: button;
+    height: 20px;
+    width: 280px;
+    left: 20px;
+    top: 136px;
+    border-radius: 0px;
+    background-color: #68B738;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    align-self: start;
+    grid-area: order;
+    margin: 0;
+}
+
 .additional-products {
+    .order-all {
+        margin: 40px 0;
+        height: 290px;
+        width: 280px;
+        background: url("../img/green_block.png"), url("../img/cat_bag.png");
+        background-repeat: no-repeat;
+        position: relative;
+    }
 
+    .order-all__image {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        top: 60px;
+        left: 101px;
+        height: 80px;
+        width: 78px;
+    }
 
+    .order-all__text {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        bottom: 43px;
+        left: 60px;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: white;
+        height: 60px;
+        width: 161px;
+        margin: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
     .additional-products__header-container {
         height: 85px;
         position: relative;
-        top: 10px;
+        top: 0px;
+        margin-top: 48px;
+        margin-bottom: 80px;
     }
 
     .additional-products__header {
@@ -14,128 +162,161 @@
         padding-bottom: 36px;
         margin: 0;
         position: relative;
-
+        left: 30px;
+        margin-top: 68px;
+        margin-bottom: 80px;
+        position: relative;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-left: 0;
+        margin-bottom: 76px;
+        margin-top: 45px;
 
         &::after {
             content: "";
             display: block;
             position: absolute;
             height: 0;
-            width: 53px;
+            width: 328px;
             border: 1px solid #68B738;
-            right: -20px;
+            right: 58px;
             top: 47.5px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 30px;
+            border: 1px solid #68b738;
+            left: -69px;
+            top: 59%;
         }
     }
 
     .additional-products__item {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 29px 14px 53px;
-        gap: 13px 0px;
-        grid-auto-flow: row;
-        justify-content: space-between;
-        justify-items: stretch;
-        align-items: end;
-        grid-template-areas: "title title"
-            "count price"
-            "order order";
-        width: 280px;
-        height: 130px;
         position: relative;
+        border: 1px solid #CDCDCD;
+        margin-bottom: -1px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 94px;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: "title count price""order order order";
+        width: 635px;
+        height: 85px;
+        padding: 28px 38px;
 
         &::after {
             content: "";
             display: block;
             position: absolute;
             height: 0;
-            width: 280px;
+            width: 708px;
             border: 1px solid #CDCDCD;
-            right: -0px;
+            right: 0px;
             top: 130px;
+            display: none;
         }
     }
 
     .additional-products__title {
-        font-size: 16px;
+        justify-self: start;
+        align-self: start;
+        grid-area: title;
+        font-size: 20px;
         font-style: normal;
         font-weight: 400;
-        line-height: 16px;
+        line-height: 20px;
         letter-spacing: 0em;
         text-align: left;
-        text-transform: uppercase;
-        align-self: end;
-        grid-area: title;
-        margin: 0;
+        width: 163px;
+        height: 20px;
     }
 
     .additional-products__count {
+        justify-self: end;
+        align-self: start;
+        grid-area: count;
         font-family: Arial, sans-serif;
-        font-size: 14px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 400;
-        line-height: 14px;
+        line-height: 20px;
         letter-spacing: 0em;
-        text-align: left;
-        grid-area: count;
-        margin: 0;
+        text-align: right;
+        width: 132px;
+        height: 19.3px;
     }
 
     .additional-products__price {
+        justify-self: end;
+        align-self: start;
+        grid-area: price;
         font-family: Arial, sans-serif;
-        font-size: 14px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 400;
-        line-height: 14px;
+        line-height: 20px;
         letter-spacing: 0em;
         text-align: right;
-        grid-area: price;
-        margin: 0;
+        width: 44px;
+        height: 20px;
     }
 
     .additional-products__order {
         display: block;
-        grid-area: button;
+        grid-area: order;
         height: 20px;
-        width: 280px;
         left: 20px;
         top: 136px;
         border-radius: 0px;
         background-color: #68B738;
         text-transform: uppercase;
         text-decoration: none;
-        color: rgb(255, 255, 255);
+        color: #ffffff;
         text-align: center;
         padding: 10px 0;
         align-self: start;
         grid-area: order;
         margin: 0;
+        width: 632px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .order-all {
-        margin: 40px 0;
-        position: relative;
-        height: 290px;
-        width: 280px;
-        background: url("/source/img/green_block.png"), url("/source/img/cat_bag.png");
-        background-repeat: no-repeat;
-        position: relative;
+    .additional-products {
+        .order-all {
+            margin-top: 69px;
+            margin-bottom: 76px;
+            height: 200px;
+            width: 708px;
+            background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-bag-tablet.png");
+            background-repeat: no-repeat;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
         .order-all__image {
             position: absolute;
-            margin-left: auto;
-            margin-right: auto;
-            top: 60px;
-            left: 101px;
-            height: 80px;
-            width: 78px;
+            margin-top: auto;
+            margin-bottom: auto;
+            height: 82px;
+            width: 80px;
+            top: 57px;
+            left: 77px;
         }
 
         .order-all__text {
             position: absolute;
             margin-left: auto;
             margin-right: auto;
-            bottom: 43px;
+            top: 71px;
             left: 60px;
             font-family: Arial, sans-serif;
             font-size: 16px;
@@ -148,6 +329,214 @@
             height: 60px;
             width: 161px;
             margin: 0;
+            left: 422px;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .additional-products__wrapper {
+        position: relative;
+    }
+
+    .additional-products__header-container {
+        height: 85px;
+        position: relative;
+        top: 0px;
+        margin-top: 48px;
+        margin-bottom: 80px;
+    }
+
+    .additional-products__header {
+        display: block;
+        height: 24px;
+        padding-top: 25px;
+        padding-bottom: 36px;
+        margin: 0;
+        position: relative;
+        left: 110px;
+        margin-top: 68px;
+        margin-bottom: 80px;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0em;
+        width: 1220px;
+        position: relative;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-left: 0;
+        margin-bottom: 76px;
+        margin-top: 45px;
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            height: 0;
+            width: 957px;
+            border: 1px solid #68B738;
+            right: -110px;
+            top: 47.5px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 70px;
+            border: 1px solid #68b738;
+            left: -109px;
+            top: 59%;
+            content: "";
+            position: absolute;
+            width: 70px;
+            border: 1px solid #68b738;
+            left: -109px;
+            top: 59%;
+        }
+    }
+
+    .additional-products__item {
+        position: relative;
+        border: 1px solid #CDCDCD;
+        margin-bottom: -1px;
+        display: flex;
+        width: 895px;
+        height: 55px;
+        padding: 28px 38px;
+        border-left: none;
+        border-right: none;
+        padding: 0;
+        justify-content: space-between;
+        padding-top: 15px;
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            height: 0;
+            width: 708px;
+            border: 1px solid #CDCDCD;
+            right: 0px;
+            top: 130px;
+            display: none;
+        }
+    }
+
+    .additional-products__title {
+        justify-self: start;
+        align-self: start;
+        grid-area: title;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        width: 163px;
+        height: 10px;
+        padding-top: 10px;
+    }
+
+    .additional-products__count {
+        justify-self: end;
+        align-self: start;
+        grid-area: count;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        width: 132px;
+        height: 7px;
+        padding-top: 13px;
+    }
+
+    .additional-products__price {
+        justify-self: end;
+        align-self: start;
+        grid-area: price;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        width: 44px;
+        height: 20px;
+        height: 7px;
+        padding-top: 13px;
+        text-align: left;
+    }
+
+    .additional-products__order {
+        display: block;
+        grid-area: order;
+        height: 20px;
+        left: 20px;
+        top: 136px;
+        border-radius: 0px;
+        background-color: #68B738;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px 0;
+        align-self: start;
+        grid-area: order;
+        margin: 0;
+        width: 244px;
+        margin: 0;
+        align-items: center;
+    }
+
+    .additional-products {
+        .order-all {
+            width: 245px;
+            height: 289px;
+            background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat_bag.png");
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 0;
+            margin: 0;
+        }
+
+        .order-all__image {
+            position: absolute;
+            margin-top: auto;
+            margin-bottom: auto;
+            height: 82px;
+            width: 80px;
+            top: 57px;
+            left: 77px;
+        }
+
+        .order-all__text {
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            top: 71px;
+            left: 60px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: white;
+            height: 60px;
+            width: 161px;
+            margin: 0;
+            left: 422px;
         }
     }
 }
