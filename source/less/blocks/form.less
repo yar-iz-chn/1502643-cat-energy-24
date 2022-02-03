@@ -42,7 +42,7 @@
         margin: 0;
         padding: 0;
         border: 0;
-        outline: 1px solid #e7e7e7;
+        outline: 1px solid @special-grey-8;
         position: absolute;
         right: 0;
         font-size: 16px;
@@ -97,21 +97,21 @@
         position: absolute;
         left: 0;
         bottom: 8px;
-        background: radial-gradient(#fff 0px, #fff 13.75px, #cdcdcd 13px, #cdcdcd 5px) 0 0 no-repeat;
+        background: radial-gradient(@white 0px, @white 14px, @special-grey 13px, @special-grey 5px) 0 0 no-repeat;
         border-radius: 50%;
     }
 
     .form__list--mass input[type=radio]:checked+label:before {
-        background: radial-gradient(#68B738 0px, #68B738 7px, #fff 7px, #fff 14px, #cdcdcd 14px, #cdcdcd 15px) 0 0 no-repeat;
+        background: radial-gradient(@basic-green 0px, @basic-green 7px, @white 7px, @white 14px, @special-grey 13px, @special-grey 15px) 0 0 no-repeat;
     }
 
     .form__list--mass label:hover:before {
-        background: radial-gradient(#fff 0px, #fff 13.75px, #bababa 13px, #bababa 5px) 0 0 no-repeat;
+        background: radial-gradient(@white 0px, @white 13.75px, @special-grey 13px, @special-grey 5px) 0 0 no-repeat;
         cursor: pointer;
     }
 
     .form__list--mass[type=radio]:checked label:hover:before {
-        background: radial-gradient(#68B738 0px, #68B738 7px, #fff 7px, #fff 14px, #bababa 14px, #bababa 15px) 0 0 no-repeat;
+        background: radial-gradient(@basic-green 0px, @basic-green 7px, @white 7px, @white 14px, @special-grey 14px, @special-grey 15px) 0 0 no-repeat;
         cursor: pointer;
     }
 
@@ -122,7 +122,7 @@
 
     .form__list {
         padding-bottom: 24px;
-        border-bottom: 1px solid #d9d9d9;
+        border-bottom: 1px solid @special-grey-9;
 
         &--additional {
             border: 0;
@@ -145,7 +145,7 @@
             content: "";
             position: absolute;
             width: 99px;
-            border: 1px solid #68b738;
+            border: 1px solid @basic-green;
             right: -20px;
             top: 54%;
 
@@ -168,7 +168,7 @@
         margin: 0;
         padding: 0;
         border: 0;
-        outline: 1px solid #e7e7e7;
+        outline: 1px solid @special-grey-8;
         font-family: "Oswald Regular", sans-serif;
         font-size: 16px;
         font-style: normal;
@@ -191,10 +191,10 @@
         left: 20px;
         top: 136px;
         border-radius: 0px;
-        background-color: #68B738;
+        background-color: @basic-green;
         text-transform: uppercase;
         text-decoration: none;
-        color: rgb(255, 255, 255);
+        color: @white;
         text-align: center;
         padding: 10px 0;
         border: 0;
@@ -208,7 +208,7 @@
 
     .form__label--checkbox {
         margin-left: 45px;
-        color: #000;
+        color: @black;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -225,17 +225,17 @@
         position: absolute;
         left: 0;
         bottom: 8px;
-        background: #fff;
-        outline: 1px solid #cdcdcd;
+        background: @white;
+        outline: 1px solid @special-grey;
     }
 
     .form__list--additional input[type=checkbox]:checked+label:before {
         background: url("/source/img/tick.png") 50% 50% no-repeat;
-        background-color: #fff;
+        background-color: @white;
     }
 
     .form__list--additional label:hover:before {
-        outline-color: #bababa;
+        outline-color: @special-grey-10;
         cursor: pointer;
     }
 
@@ -256,5 +256,5 @@
 }
 
 header {
-    border-bottom: 1px solid #d9d9d9;
+    border-bottom: 1px solid @special-grey-11;
 }
