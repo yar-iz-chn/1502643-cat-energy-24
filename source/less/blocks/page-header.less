@@ -1,106 +1,365 @@
 .page-header {
-  background-color: @white;
-  height: 65px;
-  display: grid;
-  grid-template-columns: 73px 1fr;
-  grid-template-rows: 65px;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: "logo menu";
-  position: relative;
+	background-color: white;
+	height: 65px;
+	display: grid;
+	grid-template-columns: 73px 1fr;
+	grid-template-rows: 65px;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas: "logo menu";
+	position: relative;
+	border-bottom: 1px solid #d9d9d9;
+
+	.title {
+		font-size: 20px;
+		display: block;
+		text-align: center;
+		width: 101px;
+		padding-right: 64px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 15px;
+		position: absolute;
+		top: 0px;
+		left: 100px;
+	}
+
+	.main-nav {
+		grid-area: menu;
+		grid-area: menu;
+
+		.main-nav__toggle {
+			font-size: 0;
+			background-color: transparent;
+			height: 24px;
+			width: 24px;
+			border: 0;
+			background-image: url("../img/menu-mobile.svg");
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			position: absolute;
+			right: 20px;
+			top: 18px;
+		}
+	}
+
+	.main-nav--closed {
+		.main-menu {
+			display: none;
+		}
+	}
+
+	.main-nav--open {
+		display: block;
+		position: absolute;
+		z-index: 999;
+		top: 64px;
+		width: 320px;
+		height: 200px;
+		background-color: #fff;
+		background-clip: border-box;
+
+		li {
+			font-family: "Oswald Medium", sans-serif;
+			list-style: none;
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 20px;
+			letter-spacing: 0em;
+			text-transform: uppercase;
+			width: 320px;
+			padding-top: 21px;
+			padding-bottom: 23px;
+			background-color: white;
+			border-top: 1px solid #e6e6e6;
+			border-bottom: 1px solid #e6e6e6;
+			text-align: center;
+
+			&:nth-of-type(1) {
+				border-top: 2px solid #e6e6e6;
+			}
+
+			&:nth-of-type(3) {
+				border-bottom: 2px solid #e6e6e6;
+			}
+
+			a {
+				color: black;
+				text-decoration: none;
+
+				&:visited {
+					color: black;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+.page-header__logo {
+	grid-area: logo;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 10px;
+	height: 34px;
+	width: 38px;
+
+	img {
+		height: 34px;
+		width: 38px;
+	}
+}
+
+header {
+	border-bottom: 1px solid #d9d9d9;
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+	.page-header {
+		height: 78px;
+		display: grid;
+		grid-template-columns: 175px 1fr;
+		grid-template-rows: 65px;
+		gap: 0px 0px;
+		grid-auto-flow: row;
+		grid-template-areas: "logo menu";
+		position: relative;
+		border-bottom: 1px solid #d9d9d9;
+		padding: 24px;
+		border: 0;
+		z-index: 9;
+
+		&::after {
+			display: none;
+		}
+
+		.title {
+			display: none;
+		}
+
+		.main-nav {
+			.main-menu {
+				li {
+					font-family: "Oswald Medium", sans-serif;
+					list-style: none;
+					font-size: 20px;
+					font-style: normal;
+					font-weight: 500;
+					line-height: 20px;
+					letter-spacing: 0em;
+					text-transform: uppercase;
+					width: 320px;
+					padding-top: 21px;
+					padding-bottom: 23px;
+					background-color: white;
+					border-top: 1px solid #e6e6e6;
+					border-bottom: 1px solid #e6e6e6;
+					text-align: center;
+					display: inline-block;
+					font-size: 18px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 24px;
+					letter-spacing: 0em;
+					text-align: left;
+					padding: 0;
+					border: 0;
+					padding-top: 12px;
+					width: auto;
+					text-decoration: none;
+				}
+
+				display: flex;
+				justify-content: space-between;
+				position: relative;
+				left: 93px;
+			}
+		}
+	}
+
+	.page-header__logo {
+		img {
+			display: none;
+			display: none;
+		}
+
+		width: 175px;
+		width: 175px;
+		background-image: url(../img/logo-tablet.svg);
+		height: 51px;
+		margin: 0;
+	}
+
+	.title {
+		display: none;
+	}
+
+	.main-nav {
+		width: 440px;
+	}
+
+	.main-nav__toggle {
+		display: none;
+	}
+
+	.main-menu {
+		li {
+			a {
+				display: block;
+				white-space: nowrap;
+				width: auto;
+				color: black;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.main-menu__link--active {
+		position: relative;
+
+		&::after {
+			content: "";
+			width: 168px;
+			height: 0px;
+			border: 1px solid #68b738;
+			position: absolute;
+			left: -1px;
+			top: 140%;
+			width: 100%;
+		}
+	}
+
+	.button-main-nav-toggle {
+		display: none;
+	}
+}
+
+@media (min-width: 1440px) {
+	.page-header {
+		height: 59px;
+		display: grid;
+		grid-template-columns: 202px 478px;
+		grid-template-rows: 65px;
+		gap: 0px 540px;
+		grid-auto-flow: row;
+		grid-template-areas: "logo menu";
+		position: relative;
+		border-bottom: 0;
+		padding-top: 53px;
+		padding-bottom: 53px;
+		padding-left: 110px;
+		padding-right: 110px;
+		width: 1220px;
+		background: transparent;
+		margin: 0;
+		top: 0;
+		border: 0;
+
+		&::after {
+			display: none;
+		}
+
+		.title {
+			display: none;
+		}
+
+		.main-nav {
+			.main-menu {
+				display: flex;
+				justify-content: space-between;
+				position: relative;
+				left: 0;
+				top: 17px;
+			}
+		}
+	}
+
+	.index-page {
+		.page-header {
+			position: absolute;
+		}
+
+		.main-menu {
+			li {
+				a {
+					color: #ffffff;
+				}
+			}
+		}
+
+		.main-menu__link--active {
+			&::after {
+				border: 1px solid #ffffff;
+			}
+		}
+	}
+
+	.page-header__logo {
+		img {
+			display: none;
+			display: none;
+		}
+
+		width: 202px;
+		width: 202px;
+		background-image: url(../img/logo-desktop.svg);
+		background-position: 50% 50%;
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: 59px;
+		margin: 0;
+	}
+
+	.title {
+		display: none;
+	}
+
+	.main-nav {
+		width: 478px;
+	}
+
+	.main-nav__toggle {
+		display: none;
+	}
+
+	.main-menu {
+		li {
+			a {
+				display: block;
+				white-space: nowrap;
+				width: auto;
+				text-decoration: none;
+				color: black;
+				font-size: 20px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 30px;
+				letter-spacing: 0em;
+				text-align: left;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	.main-menu__link--active {
+		&::after {
+			content: "";
+			width: 168px;
+			height: 0px;
+			border: 1px solid #68b738;
+			position: absolute;
+			left: -1px;
+			top: 38px;
+			width: 100%;
+		}
+
+		position: relative;
+	}
+
+	.button-main-nav-toggle {
+		display: none;
+	}
 
 
-  .title {
-    font-size: 20px;
-    display: block;
-    text-align: center;
-    width: 101px;
-    padding-right: 64px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 15px;
-    position: absolute;
-    top: 0px;
-    left: 100px;
-  }
-
-  .page-header__logo {
-    grid-area: logo;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
-    .size(34px, 38px);
-  }
-
-  .page-header__logo img {
-    .size(34px, 38px);
-  }
-
-  .main-nav {
-    grid-area: menu;
-
-    .main-nav--closed {
-      .main-menu {
-        display: none;
-      }
-    }
-
-    .main-nav--open {
-      display: block;
-      position: absolute;
-      z-index: 999;
-      top: 64px;
-      width: 320px;
-      height: 200px;
-      background-color: @white;
-      background-clip: border-box;
-
-      li {
-        font-family: "Oswald Medium", sans-serif;
-        list-style: none;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 20px;
-        letter-spacing: 0em;
-        text-transform: uppercase;
-        width: 320px;
-        padding-top: 21px;
-        padding-bottom: 23px;
-        background-color: @white;
-        border-top: 1px solid @special-grey-7;
-        border-bottom: 1px solid @special-grey-7;
-        text-align: center;
-
-        &:nth-of-type(1) {
-          border-top: 2px solid @special-grey-7;
-        }
-
-        &:nth-of-type(3) {
-          border-bottom: 2px solid @special-grey-7;
-        }
-
-        a,
-        a:visited {
-          color: @black;
-          text-decoration: none;
-        }
-      }
-    }
-
-    .main-nav__toggle {
-      font-size: 0;
-      background-color: transparent;
-      height: 24px;
-      width: 24px;
-      border: 0;
-      background-image: url("/source/img/menu-mobile.svg");
-      .bg-img-position();
-      position: absolute;
-      right: 20px;
-      top: 18px;
-    }
-  }
-
-  border-bottom: 1px solid @special-grey-5;
 }
