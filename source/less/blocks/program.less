@@ -1,9 +1,7 @@
 .program {
-  background-image: linear-gradient(to bottom,
-      @basic-green 302px,
-      transparent 302px),
-    url(/source/img/index-background-mobile.png);
-  .bg-img-position();
+  background-image: linear-gradient(to bottom, #68b738d9 302px, transparent 302px), url(../img/index-background-mobile.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
   background-position: top;
   color: @white;
   text-align: center;
@@ -34,7 +32,7 @@
   }
 
   .program__image {
-    height: 260px;
+    height: 270px;
     width: 280px;
     position: relative;
     top: 37px;
@@ -45,11 +43,10 @@
     width: 280px;
     padding-top: 8px;
     padding-bottom: 8px;
-    background-color: @basic-green;
+    background-color: #68b738;
     display: block;
-    color: @white;
+    color: white;
     text-decoration: none;
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
     font-size: 14px;
@@ -60,5 +57,137 @@
     text-align: center;
     position: relative;
     top: 31px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+  .program {
+    background: none;
+    position: relative;
+
+    .program__title {
+      font-size: 60px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 60px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #000000;
+      height: 120px;
+      width: 420px;
+      left: 117px;
+      margin: 0;
+      margin-bottom: 41px;
+    }
+
+    .program__text {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #000000;
+      height: 20px;
+      width: 283px;
+      left: 117px;
+      margin: 0;
+    }
+
+    .program__image {
+      z-index: -1;
+      width: 709px;
+      height: 609px;
+    }
+
+    .program__link {
+      height: 26px;
+      width: 192px;
+      background-color: #68b738;
+      display: block;
+      color: white;
+      position: absolute;
+      top: 31px;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: center;
+      padding: 14px 26px;
+      top: 250px;
+      left: 117px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .program {
+    background: linear-gradient(to left, transparent 0, transparent 720px, rgba(104, 183, 56, 0.85) 720px, rgba(104, 183, 56, 0.85) 1440px), url(../img/index-background-desktop.png);
+    position: relative;
+    background-position: 720px 0, 720px 0;
+    background-repeat: no-repeat;
+    height: 694px;
+    z-index: -1;
+    margin-bottom: 82px;
+
+    .program__title {
+      font-size: 60px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 60px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #000000;
+      height: 120px;
+      width: 420px;
+      left: 190px;
+      top: 223px;
+      margin: 0;
+      margin-bottom: 41px;
+      position: relative;
+    }
+
+    .program__text {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #000000;
+      height: 20px;
+      width: 283px;
+      left: 190px;
+      margin: 0;
+      top: 383px;
+      position: absolute;
+    }
+
+    .program__image {
+      width: 552px;
+      height: 499px;
+      left: 558px;
+      top: 141px;
+      position: absolute;
+    }
+
+    .program__link {
+      height: 26px;
+      width: 192px;
+      background-color: #68b738;
+      display: block;
+      color: white;
+      position: absolute;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: center;
+      padding: 14px 26px;
+      top: 465px;
+      left: 190px;
+    }
   }
 }
